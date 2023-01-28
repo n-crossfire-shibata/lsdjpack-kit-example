@@ -16,8 +16,6 @@ RUN git clone https://github.com/gbdev/rgbds.git
 
 WORKDIR /work/rgbds
 
-RUN git checkout v0.5.2
-
 RUN cmake -S . -B build -DCMAKE_BUILD_TYPE=Release
 
 RUN cmake --build build
